@@ -1,0 +1,117 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1vw;
+  font-family: 'Leon' !important;
+}
+@font-face {
+  font-family: 'Leon';
+  src: url("LeonSans-Medium.otf");
+}
+:root {
+  --primary: #0064ff !important;
+  --secondary: #0064ff !important;
+  --blue: #0064ff;
+  --blue-trans: #0064ff22;
+  --yellow: #ffc800;
+  --yellow-trans: #ffc80022;
+  --red: #ff0032;
+  --red-trans: #ff003222;
+  --green: #00b428;
+  --purple: #7900dc;
+}
+nav {
+  font-size: 1.5vw;
+  margin: 1vw 12.5% 1vw 12.5%;
+  width: 75%;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 12.5% 0 12.5%;
+}
+section.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 12.5% 0 12.5%;
+}
+h1 {
+  font-size: 2vw;
+}
+h2 {
+  font-size: 1.5vw;
+}
+p {
+  font-size: 1vw;
+}
+.content {
+  width: 31.25vw;
+}
+.image {
+  width: 31.25vw;
+}
+.img {
+  width: 100%;
+}
+button {
+  min-width: 4vw !important;
+  padding: 0.5vw 2vw 0.5vw 2vw !important;
+  font-size: 1vw !important;
+  font-family: 'Leon' !important;
+}
+.MuiButton-containedPrimary {
+  text-transform: none !important;
+  background: var(--primary) !important;
+  font-family: 'Leon' !important;
+  min-width: 4vw !important;
+}
+.MuiButton-text {
+  text-transform: none !important;
+  font-family: 'Leon' !important;
+  min-width: 4vw !important;
+}
+div {
+  font-family: 'Leon' !important;
+}
+.adjust-child {
+  align-self: flex-start;
+}
+#quiz {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 12.5vw;
+}
+.PrivateSwitchBase-root-1 {
+  width: 4vw !important;
+  height: 4vw !important;
+}
+.PrivateRadioButtonIcon-root-5 {
+  width: 2vw !important;
+  height: 2vw !important;
+}
+.MuiSvgIcon-root {
+  width: 2vw !important;
+  height: 2vw !important;
+}
+.MuiButton-root {
+  border-radius: 0.3vw !important;
+}
+.MuiTypography-body1 {
+  font-family: 'Leon' !important;
+  font-size: 1.5vw !important;
+}
+.MuiRadio-colorSecondary.Mui-checked {
+  color: var(--blue) !important;
+}
+.MuiRadio-colorSecondary.Mui-checked {
+  color: var(--blue) !important;
+}
+.MuiRadio-colorSecondary.Mui-checked:hover {
+  background-color: var(--blue-trans) !important;
+}
+.MuiIconButton-colorSecondary:hover {
+  background-color: #00000022 !important;
+}
