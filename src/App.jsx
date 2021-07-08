@@ -8,6 +8,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import Snackbar from '@material-ui/core/Snackbar';
+var userAnswer = undefined 
 
 function App() {
   const [value, setValue] = React.useState('a');
@@ -30,6 +31,12 @@ function App() {
   const handleClose = () => {
     setState({ ...state, open: false });
   };
+  function selectAnswer(value) {
+    if (userAnswer !== value) {
+      userAnswer = value
+      console.log(userAnswer)
+    }
+  }
   return (
     <React.Fragment>
       <nav>
@@ -65,13 +72,16 @@ function App() {
       
       <div id="quiz">
         <FormControl component="fieldset">
-        <RadioGroup aria-label="options" name="options" value={value} onChange={handleChange}>
-          <FormControlLabel value="a" control={<Radio />} label="Option 1" />
-          <FormControlLabel value="b" control={<Radio />} label="Option 2" />
-          <FormControlLabel value="c" control={<Radio />} label="Option 3" />
-          <FormControlLabel value="d" control={<Radio />} label="Option 4" />
-        </RadioGroup>
-      </FormControl>
+          <RadioGroup aria-label="options" name="options" value={value} onChange={handleChange} onClick={(e) => selectAnswer(e.target.value)}>
+            <FormControlLabel value="a" control={<Radio />} label="Option 1" />
+            <FormControlLabel value="b" control={<Radio />} label="Option 2" />
+            <FormControlLabel value="c" control={<Radio />} label="Option 3" />
+            <FormControlLabel value="d" control={<Radio />} label="Option 4" />
+          </RadioGroup>
+        </FormControl>
+        <Button className="adjust-child"color="primary" variant="contained" disableElevation>
+          Submit
+        </Button>
       </div>
       <section class="column">
         Radio Button Input
